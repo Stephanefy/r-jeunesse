@@ -5,9 +5,12 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Marie Rose Ah Moye Distributeur indépendant Jeunesse`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `stephanfy`,
+    description: `Distributeur Jeunesse Global à la Réunion, Découvrez l'univers de Jeunesse`,
+    author: `stephanefy`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    keywords: `produits naturel, Bien-être, Jeunesse, Jeunesse Global Réunion`,
+    image: `src/assets/logo/Jeunesse-Logo-Gray.png`
+
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

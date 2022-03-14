@@ -58,9 +58,12 @@
   }
 
   .portfolio-img {
+    display: flex;
+    justify-content: center;
 
     img {
       width: 80%;
+      margin: auto;
     }
   }
 

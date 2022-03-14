@@ -64,7 +64,7 @@ const Footer = () => {
                 <div className="col-md-4">
                         <p>Distributeur indépendant Jeunesse Global</p>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 text-center text-lg-start text-sm-center">
                     <Link to="/mentions-légales" style={{color: "#58595b"}}>
                         mentions légales
                     </Link>

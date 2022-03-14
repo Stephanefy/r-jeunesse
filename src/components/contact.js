@@ -37,7 +37,7 @@ const Contact = () => {
                     </h2>
                     <p className="wow fadeInUp" data-wow-delay=".6s">
                       N'hésitez pas à prendre contact avec moi je me ferai un
-                      plaisir de vous faire découvrir l'univers Jeunesse
+                      plaisir de vous faire découvrir l'univers de Jeunesse
                     </p>
                   </div>
                 </div>

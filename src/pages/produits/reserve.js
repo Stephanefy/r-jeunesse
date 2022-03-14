@@ -2,11 +2,13 @@ import React from "react"
 import Layout from "../../components/layout"
 import ReserveLogo from "../../assets/img/logo/Jeunesse-Reserve-TM-white.png"
 import ReserveImg from "../../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.webp"
+import ReserveBg from '../../assets/img/bg/reserve-bg.jpeg'
+
 
 const ReserveProductPage = () => {
   return (
     <Layout isNotRoot={true}>
-      <section id="ampm" className="container-md ">
+      <section id="reserve">
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-6">
             <div class="section-title mb-60">
@@ -34,7 +36,15 @@ const ReserveProductPage = () => {
             </div>
           </div>
         </div>
-        <div className="row d-flex justify-content-center">
+        <div className="parallax"
+          style={{
+            background:`url(${ReserveBg}) no-repeat fixed`,
+            backgroundSize: `cover`
+          }}
+        >
+
+        </div>
+        <div className="row d-flex justify-content-center mt-5">
           <div className="col-xl-3 col-lg-3 col-md-12">
             <div
               className="footer-widget mb-60 wow fadeInUp"

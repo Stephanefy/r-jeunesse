@@ -2,11 +2,12 @@ import React from "react"
 import Layout from "../../components/layout"
 import NaaraLogo from "../../assets/img/logo/naara-eu-logo.png"
 import NaaraImg from "../../assets/img/portfolio/naara-eu-product-500.png"
+import NaaraBg from '../../assets/img/bg/hair-skin-nails-naara.jpeg'
 
 const NaaraProductPage = () => {
   return (
     <Layout isNotRoot={true}>
-      <section id="ampm" className="container-md ">
+      <section id="naara">
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-6">
             <div class="section-title mb-60">
@@ -34,7 +35,15 @@ const NaaraProductPage = () => {
             </div>
           </div>
         </div>
-        <div className="row d-flex justify-content-center">
+        <div className="parallax"
+          style={{
+            background:`url(${NaaraBg}) no-repeat fixed`,
+            backgroundSize: `cover`
+          }}
+        >
+
+        </div>
+        <div className="row d-flex justify-content-center mt-5">
           <div className="col-xl-3 col-lg-3 col-md-12">
             <div
               className="footer-widget mb-60 wow fadeInUp"
@@ -87,7 +96,7 @@ const NaaraProductPage = () => {
               data-wow-delay=".8s"
             >
               <h4 style={{ color: "#b00057" }}>
-                Qui peut commencer la boisson beauté NAÄRA ?
+                Qui peut consommer la boisson beauté NAÄRA ?
               </h4>
               <p>
                 La Boisson Beauté Naära est destinée aux adultes de plus de 18

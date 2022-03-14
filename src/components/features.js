@@ -24,7 +24,7 @@ const Features = () => {
           <div className="col-lg-4 col-md-6">
             <div className="feature-box box-style jeunesse-top-logo">
               <div className="feature-icon box-icon-style">
-                <img src={JeunesseTopIllustration} width="70"/>
+                <img src={JeunesseTopIllustration} width="70" alt="logo-jeunesse"/>
               </div>
               <div className="box-content-style feature-content">
                 <h4>Bien être</h4>
@@ -37,7 +37,7 @@ const Features = () => {
           <div className="col-lg-4 col-md-6">
             <div className="feature-box box-style jeunesse-top-logo">
             <div className="feature-icon box-icon-style">
-                <img src={JeunesseTopIllustration} width="70"/>
+                <img src={JeunesseTopIllustration} width="70" alt="logo-jeunesse"/>
               </div>
               <div className="box-content-style feature-content">
                 <h4>Résultats</h4>
@@ -50,7 +50,7 @@ const Features = () => {
           <div className="col-lg-4 col-md-6">
             <div className="feature-box box-style jeunesse-top-logo">
             <div className="feature-icon box-icon-style">
-                <img src={JeunesseTopIllustration} width="70"/>
+                <img src={JeunesseTopIllustration} width="70" alt="logo-jeunesse"/>
               </div>
               <div className="box-content-style feature-content">
                 <h4>Développement</h4>

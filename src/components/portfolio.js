@@ -64,11 +64,11 @@ const ProductsPortfolio = () => {
               </div>
               <div className="portfolio-overlay reserve">
                 <div className="overlay-content">
-                  <h4>AM & PM Essentials</h4>
+                  <h4>Reserve</h4>
                   <p>
-                    Ce duo contient des vitamines, des nutriments et des
-                    minéraux conçus exclusivement pour cibler les besoins
-                    diurnes et nocturnes de votre corps.
+                  Boostez votre santé avec Reserve, un mélange de superfruits avec de l’extrait de pépins de raisin titré en resvératrol issu
+                  de la recherche scientifique, de thé vert et d’aloe vera. Chaque fruit de Reserve a été spécialement sélectionné pour son
+                  profil nutritionnel et ses qualités gustatives. De meilleurs ingrédients pour un meilleur vous.
                   </p>
                   <Link
                     to="/produits/reserve"
@@ -83,7 +83,7 @@ const ProductsPortfolio = () => {
           <div className="col-lg-4 col-md-6 grid-item web graphic">
             <div className="portfolio-item-wrapper">
               <div className="portfolio-img">
-                <img src={RevitaBlu} alt="Revita Blu" height="300" />
+                <img src={RevitaBlu} alt="Revita Blu"/>
               </div>
               <div className="portfolio-overlay revita-blu">
                 <div className="overlay-content">

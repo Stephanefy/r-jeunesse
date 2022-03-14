@@ -2,11 +2,12 @@ import React from "react"
 import Layout from "../../components/layout"
 import RevitaBluLogo from "../../assets/img/logo/revita-blu-logo.png"
 import RevitaImg from "../../assets/img/portfolio/revitablu-package.png"
+import RevitaBluBg from '../../assets/img/bg/RevitaBLU_Feb10-2020_2.jpeg'
 
 const RevitaBlu = () => {
   return (
     <Layout isNotRoot={true}>
-      <section id="revita-blu" className="container-md">
+      <section id="revita-blu">
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-12">
             <div class="section-title mb-60">
@@ -36,7 +37,15 @@ const RevitaBlu = () => {
             </div>
           </div>
         </div>
-        <div className="row d-flex justify-content-center">
+        <div className="parallax"
+          style={{
+            background:`url(${RevitaBluBg}) no-repeat fixed`,
+            backgroundSize: `cover`
+          }}
+        >
+
+        </div>
+        <div className="row d-flex justify-content-center mt-5">
           <div className="col-xl-6 col-lg-6 col-md-12 mx-2">
             <div
               className="mb-60 wow fadeInUp"

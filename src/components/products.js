@@ -26,7 +26,8 @@ const Products = () => {
 
         <div className="row">
           <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style">
+            <div className="service-box box-style service-boxes">
+              <a href="https://www.jeunesseglobal.com/fr-FR/revitablu"></a>
               <div
                 className="service-icon box-icon-style"
                 style={{ background: "#0397b2", border: "solid 1px #0397b2" }}
@@ -45,7 +46,9 @@ const Products = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style">
+            <div className="service-box box-style service-boxes">
+              <a href="https://www.jeunesseglobal.com/fr-FR/reserve"></a>
+
               <div
                 className="service-icon box-icon-style"
                 style={{ background: "#1f1442", border: "solid 1px #1f1442" }}
@@ -64,7 +67,9 @@ const Products = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style">
+            <div className="service-box box-style service-boxes">
+              <a href="https://www.jeunesseglobal.com/fr-FR/naara"></a>
+
               <div
                 className="service-icon box-icon-style"
                 style={{ background: "#c9006b", border: "solid 1px #c9006b" }}
@@ -72,7 +77,7 @@ const Products = () => {
                 <img src={NaaraLogo} alt="reserve" width="80" />
               </div>
               <div className="box-content-style service-content">
-                <h4>Naara</h4>
+                <h4>Naära</h4>
                 <p>
                   La Boisson Beauté Naära est un complément alimentaire qui
                   combine 11 000 mg d'hydrolysat de collagène avec des
@@ -83,7 +88,9 @@ const Products = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style">
+            <div className="service-box box-style service-boxes">
+              <a href="https://www.jeunesseglobal.com/fr-FR/am/pmessentials"></a>
+
               <div
                 className="service-icon box-icon-style"
                 style={{ background: "#fff", border: "solid 1px #e39d68" }}
@@ -91,7 +98,7 @@ const Products = () => {
                 <img src={AMPMLogo} alt="reserve" width="60" />
               </div>
               <div className="box-content-style service-content">
-                <h4>AM PM</h4>
+                <h4>AM&PM essentials</h4>
                 <p>
                   Formulé et élaboré par un physicien certifié et nommé au prix
                   Nobel, AM & PM Essentials vous fourni les nutriments que votre
@@ -102,7 +109,9 @@ const Products = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style">
+            <div className="service-box box-style service-boxes">
+              <a href="https://www.jeunesseglobal.com/fr-FR/luminesce"></a>
+
               <div
                 className="service-icon box-icon-style"
                 style={{ background: "#3da0ce", border: "solid 1px #3da0ce" }}
@@ -120,7 +129,8 @@ const Products = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style">
+            <div className="service-box box-style service-boxes">
+              <a href="https://www.jeunesseglobal.com/fr-FR/zen"></a>
               <div
                 className="service-icon box-icon-style"
                 style={{ background: "#fff", border: "solid 1px #c3012f" }}
@@ -128,7 +138,7 @@ const Products = () => {
                 <img src={ZenLogo} alt="reserve" width="80" />
               </div>
               <div className="box-content-style service-content">
-                <h4>Gamme Zen</h4>
+                <h4>Gamme Zen Bodi</h4>
                 <p>
                   ZEN a aidé des centaines de milliers de personnes dans le
                   monde entier à transformer leur santé, équilibrer leur corps
