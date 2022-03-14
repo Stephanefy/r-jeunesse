@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import JeunessBGVideo from '../assets/videos/hero-video.mp4'
 import {useStaticQuery, graphql} from 'gatsby';
 import Video from './video';
 
