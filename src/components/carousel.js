@@ -1,10 +1,31 @@
 import React, { useState } from 'react'
-import revitaBluImg from '../assets/img/carousel/image36.jpg'
-import AmPmImg from '../assets/img/carousel/image17.jpg'
 import Carousel from 'react-bootstrap/Carousel';
-import JeunessBGVideo from '../assets/videos/JCloud_.North+America_French+CAN_Media_SHARE_Product+Catalog+Video_YES-System-w-M1ND-2016-FR-compressed.webm'
+import JeunessBGVideo from '../assets/videos/hero-video.mp4'
+import {useStaticQuery, graphql} from 'gatsby';
+import Video from './video';
+
 
 const IndexCarousel = () => {
+
+  
+
+ const data = useStaticQuery(graphql`
+    query CloudinaryHeroVideo {
+        allCloudinaryMedia {
+        edges {
+            node {
+            secure_url
+            url
+            }
+        }
+        }
+    }
+    `
+);
+  const heroVideo = data.allCloudinaryMedia.edges[0].node.url;
+
+  console.log(heroVideo)
+
 
 
   const [index, setIndex] = useState(0);
@@ -34,8 +55,11 @@ const IndexCarousel = () => {
             <Carousel.Item className="carousel-section carousel-item"
             >
                 <video autoPlay muted loop className="hero-video" style={{width: "100%", objectFit:"cover"}}>
-                    <source src={JeunessBGVideo} type="video/webm" />
+                    <source src="https://res.cloudinary.com/dcbctf4bl/video/upload/v1647233627/rosah-jeunesse/JCloud_.North_America_French_CAN_Media_SHARE_Product_Catalog_Video_YES-System-w-M1ND-2016-FR-compressed_bxxris.mp4" type="video/mp4" />
                 </video> 
+                {/* <Video 
+                    videoSrcURL={heroVideo}
+                /> */}
 
                 <div className="container">
                     <div className="row">

@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Luminesce from "../assets/img/portfolio/luminesceFamily.png"
-import AmPm from "../assets/img/portfolio/EU_AM-PM-product-img.png"
+import Reserve from "../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.webp"
 import RevitaBlu from "../assets/img/portfolio/revitablu-package.png"
 import Naara from '../assets/img/portfolio/naara-eu-product-500.png'
 
@@ -40,7 +39,7 @@ const ProductsPortfolio = () => {
           <div className="col-lg-4 col-md-6 grid-item beauté">
             <div className="portfolio-item-wrapper">
               <div className="portfolio-img">
-                <img src={Naara} alt="Naara" width="300" />
+                <img src={Naara} alt="Naara" width="200" />
               </div>
               <div className="portfolio-overlay naara">
                 <div className="overlay-content">
@@ -61,9 +60,9 @@ const ProductsPortfolio = () => {
           <div className="col-lg-4 col-md-6 grid-item marketing web">
             <div className="portfolio-item-wrapper">
               <div className="portfolio-img">
-                <img src={AmPm} alt="am pm essentials" />
+                <img src={Reserve} alt="reserve" />
               </div>
-              <div className="portfolio-overlay ampm">
+              <div className="portfolio-overlay reserve">
                 <div className="overlay-content">
                   <h4>AM & PM Essentials</h4>
                   <p>
@@ -72,14 +71,13 @@ const ProductsPortfolio = () => {
                     diurnes et nocturnes de votre corps.
                   </p>
                   <Link
-                    to="/produits/ampm"
+                    to="/produits/reserve"
                     className="theme-btn border-btn glightbox"
                   >
                     Détails
                   </Link>
                 </div>
               </div>
-              ""
             </div>
           </div>
           <div className="col-lg-4 col-md-6 grid-item web graphic">

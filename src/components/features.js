@@ -29,8 +29,7 @@ const Features = () => {
               <div className="box-content-style feature-content">
                 <h4>Bien être</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                  eirmod tempor ividunt labor dolore magna.
+                  Des Produits aux propriétés naturelles.
                 </p>
               </div>
             </div>
@@ -43,8 +42,7 @@ const Features = () => {
               <div className="box-content-style feature-content">
                 <h4>Résultats</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                  eirmod tempor ividunt labor dolore magna.
+                 Des résultats rapidement visibles
                 </p>
               </div>
             </div>
@@ -57,8 +55,7 @@ const Features = () => {
               <div className="box-content-style feature-content">
                 <h4>Développement</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                  eirmod tempor ividunt labor dolore magna.
+                  Développez votre potentiel avec Jeunesse
                 </p>
               </div>
             </div>

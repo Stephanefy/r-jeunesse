@@ -60,7 +60,7 @@
   .portfolio-img {
 
     img {
-      width: 100%;
+      width: 80%;
     }
   }
 
@@ -102,6 +102,9 @@
 
     &.naara {
       background: linear-gradient(rgba(#940049, .94) 0%, rgba(#920148, .94) 100%);
+    }
+    &.reserve {
+      background: linear-gradient(rgba(#6b2c5c, .94) 0%, rgba(#150a3a, .94) 100%);
 
     }
 

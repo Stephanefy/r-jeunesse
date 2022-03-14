@@ -37,22 +37,32 @@ const About = () => {
                   <div className="d-flex my-3">
                     <div className="align-self-center">
                       <p
-                        className="mb-45 ml-2 wow fadeInUp"
+                        className="ml-2 wow fadeInUp"
                         data-wow-delay=".6s"
                       >
                         Mon histoire avec Jeunesse commence en 2021 lorsqu'une
-                        amie proche me présente les produits. <br />
+                        amie proche me présente les produits.
+                      </p>
+                      <br/>
+                      <p
+                        className="ml-2 wow fadeInUp"
+                        data-wow-delay=".7s"
+                      >
                         Appuyés par un comité scientifique de professeurs et
                         médecins, les produits Jeunesse m'ont tout de suite plu
                         par leur qualité, leur origine naturelle et par les
                         résultats rapidement visibles.
                       </p>
-                      <p>
+                      <br/>
+                      <p
+                        className="ml-2 wow fadeInUp"
+                        data-wow-delay=".8s"
+                      >
                         Jeunesse m'a permis de retrouver Bien-être et confiance
                         en soi.<br/>À 64 ans j'ai donc décidé de me lancer dans
                         cette nouvelle aventure et me suis posé le défi d'aider
                         les gens à retrouver les bienfaits que j'ai moi-même
-                        récolté en entrant dans l'univers de Jeunesse Globale.
+                        récoltés en rejoignant l'univers de Jeunesse Global.
                       </p>
                     </div>
                   </div>

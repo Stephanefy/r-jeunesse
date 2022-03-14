@@ -20,7 +20,7 @@ const NaaraProductPage = () => {
                   padding: "0.3em 0",
                 }}
               >
-                <img src={NaaraLogo} width="200" height="50" alt="logo naara" />
+                <img src={NaaraLogo} width="200" alt="logo naara" />
               </div>
               <div className="d-flex justify-content-center">
                 <img

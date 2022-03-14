@@ -76,7 +76,7 @@ const Header = ({ siteTitle, isNotRoot }) => {
                 </ul>
                 <div className="header-btn">
                 {isNotRoot ? (
-                      <Link to="/#produits" className="theme-btn page-scroll active">
+                      <Link to="/#contact" className="theme-btn page-scroll active">
                         Prendre contact
                       </Link>
                     ) : (
