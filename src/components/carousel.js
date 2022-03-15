@@ -62,7 +62,7 @@ const IndexCarousel = () => {
 
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-8 col-lg-10 mx-auto">
+                        <div className="col-xl-8 col-lg-10 mx-auto mt-5">
                             <div className="carousel-content text-center">
                                 <div className="section-title">
                                     <h1 className="hero-title">Marie Rose Ah-Moye</h1>

@@ -5,8 +5,42 @@ import logo from "../assets/img/logo/jeunesse-logo-header-v2.svg"
 
 const Header = ({ siteTitle, isNotRoot }) => {
   const [isNavCollapsed, setIsNavCollapsed] = React.useState(true)
+  const [isActive, setIsActive] = React.useState(1)
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed)
+  const handleIsActive = (i) => setIsActive(i)
+
+  const onScroll = () => {
+    let sections = document.querySelectorAll('.page-scroll');
+    let scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (let i = 0; i < sections.length; i++) {
+      let currLink = sections[i];
+      let val = currLink.getAttribute('href');
+      let refElement = document.querySelector(val.split('/')[1] ? val.split('/')[1] : val);
+      let scrollTopMinus = scrollPos + 73;
+      if (refElement && refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
+        document.querySelector('.page-scroll').classList.remove('active');
+        currLink.classList.add('active');
+      } else {
+        currLink.classList.remove('active');
+      }
+    }
+  };
+
+
+  React.useEffect(() => {
+    if (!isNotRoot) {
+      window.document.addEventListener('scroll', onScroll);
+  
+  
+      return () => window.removeEventListener('scroll', onScroll);
+    }
+
+  }, [onscroll])
+
+
+
 
   return (
     <header className="header navbar-area bg-white">
@@ -40,35 +74,35 @@ const Header = ({ siteTitle, isNotRoot }) => {
                 id="navbarSupportedContent"
               >
                 <ul id="nav" className="navbar-nav ml-auto">
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={() => handleIsActive(1)}>
                     {isNotRoot ? (
-                      <Link to="/#top" className="page-scroll active">
+                      <Link to="/#top" className={`page-scroll ${isActive === 1 ? "active" : null}`}>
                         Accueil
                       </Link>
                     ) : (
-                      <a className="page-scroll active" href="#top">
+                      <a className={`page-scroll ${isActive === 1 ? "active" : null}`} href="#top">
                         Accueil
                       </a>
                     )}
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={() => handleIsActive(2)}>
                     {isNotRoot ? (
-                      <Link to="/#a-propos" className="page-scroll active">
+                      <Link to="/#a-propos" className={`page-scroll ${isActive === 2 ? "active" : null}`}>
                         A propos
                       </Link>
                     ) : (
-                      <a className="page-scroll active" href="#a-propos">
+                      <a className={`page-scroll ${isActive === 2 ? "active" : null}`} href="#a-propos">
                         A propos
                       </a>
                     )}
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={() => handleIsActive(3)}>
                     {isNotRoot ? (
-                      <Link to="/#produits" className="page-scroll active">
+                      <Link to="/#produits" className={`page-scroll ${isActive === 3 ? "active" : null}`}>
                         Produits
                       </Link>
                     ) : (
-                      <a className="page-scroll active" href="#produits">
+                      <a className={`page-scroll ${isActive === 3 ? "active" : null}`} href="#produits">
                         Produits
                       </a>
                     )}{" "}
@@ -76,11 +110,11 @@ const Header = ({ siteTitle, isNotRoot }) => {
                 </ul>
                 <div className="header-btn">
                 {isNotRoot ? (
-                      <Link to="/#contact" className="theme-btn page-scroll active">
+                      <Link to="/#contact" className="theme-btn page-scroll">
                         Prendre contact
                       </Link>
                     ) : (
-                      <a className="theme-btn page-scroll active" href="#contact">
+                      <a className="theme-btn page-scroll" href="#contact">
                         Prendre contact
                       </a>
                     )}{" "}

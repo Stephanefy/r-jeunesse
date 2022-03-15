@@ -61,7 +61,7 @@ const LegalNoticePage = ({location}) => {
             <p>adresse e-mail: stephanefokyin@gmail.com</p>
             <h4 className="mt-3">Cookies: </h4>
             <p className="legal-statement">
-              Le site www.anthedesign.fr peut-être amené à vous demander
+              Le site www.rosah-jeunesse.re peut-être amené à vous demander
               l’acceptation des cookies pour des besoins de statistiques et
               d’affichage. Un cookie est une information déposée sur votre
               disque dur par le serveur du site que vous visitez

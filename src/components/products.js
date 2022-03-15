@@ -5,11 +5,111 @@ import NaaraLogo from "../assets/img/logo/naara-eu-logo.png"
 import AMPMLogo from "../assets/img/logo/am-pm-essentials--trans-logo.svg"
 import LuminesceLogo from "../assets/img/logo/luminesceLogo_fr.png"
 import ZenLogo from "../assets/img/logo/zenBodiSmallLogo.png"
+import { Link } from "gatsby"
+import Reserve from "../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.webp"
+import RevitaBlu from "../assets/img/portfolio/revitablu-package.png"
+import Naara from '../assets/img/portfolio/naara-eu-product-500.png'
 
 const Products = () => {
   return (
     <section id="produits" className="service-section pt-130">
       <div className="container">
+      <div className="row align-items-end">
+          <div className="col-xl-6 col-lg-6">
+            <div className="section-title mb-60">
+              <h2 className="wow fadeInUp" data-wow-delay=".4s">
+                Nos produits phares
+              </h2>
+            </div>
+          </div>
+          {/* <div className="col-xl-6 col-lg-6">
+            <div className="section-title mb-60">
+              <p className="wow fadeInUp" data-wow-delay=".4s">
+                We Crafted an awesome design library that is robust aintuitive
+                to use. No matter you're building a busine presentation websit
+                or a complex web application.
+              </p>
+            </div>
+          </div> */}
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <div className="portfolio-btn-wrapper">
+              <button className="portfolio-btn active" data-filter="*">
+                Top 3 produits Jeunesse à la Réunion
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="row grid">
+          <div className="col-lg-4 col-md-6 grid-item beauté">
+            <div className="portfolio-item-wrapper">
+              <div className="portfolio-img">
+                <img src={Naara} alt="Naara" width="200" />
+              </div>
+              <div className="portfolio-overlay naara">
+                <div className="overlay-content">
+                  <h4>Naara</h4>
+                  <p>
+                  La Boisson Beauté Naära est un complément alimentaire qui combine 11 000 mg d'hydrolysat de collagène avec des nutriments de beauté pour préserver le capital jeunesse des cheveux, de la peau et des ongles.
+                  </p>
+                  <Link
+                    to="/produits/naara"
+                    className="theme-btn border-btn glightbox"
+                  >
+                    Détails
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 grid-item marketing web">
+            <div className="portfolio-item-wrapper">
+              <div className="portfolio-img">
+                <img src={Reserve} alt="reserve" />
+              </div>
+              <div className="portfolio-overlay reserve">
+                <div className="overlay-content">
+                  <h4>Reserve</h4>
+                  <p>
+                  Boostez votre santé avec Reserve, un mélange de superfruits avec de l’extrait de pépins de raisin titré en resvératrol issu
+                  de la recherche scientifique, de thé vert et d’aloe vera. Chaque fruit de Reserve a été spécialement sélectionné pour son
+                  profil nutritionnel et ses qualités gustatives. De meilleurs ingrédients pour un meilleur vous.
+                  </p>
+                  <Link
+                    to="/produits/reserve"
+                    className="theme-btn border-btn glightbox"
+                  >
+                    Détails
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 grid-item web graphic">
+            <div className="portfolio-item-wrapper">
+              <div className="portfolio-img">
+                <img src={RevitaBlu} alt="Revita Blu"/>
+              </div>
+              <div className="portfolio-overlay revita-blu">
+                <div className="overlay-content">
+                  <h4>Revita Blu</h4>
+                  <p>
+                    RevitaBlū™ est un mélange végétal composé d’algues bleues,
+                    de baies d’argousier, d’aloe vera et de poudre d’eau de noix
+                    de coco.
+                  </p>
+                  <Link
+                    to="/produits/revita-blu"
+                    className="theme-btn border-btn glightbox"
+                  >
+                    Détails
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="row">
           <div className="col-xl-6 col-lg-7 col-md-9 mx-auto">
             <div className="section-title text-center mb-55">

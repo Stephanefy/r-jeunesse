@@ -1,5 +1,5 @@
 import React from "react"
-import JeunesseTopIllustration from '../assets/img/logo/jeunesse-top-illustration.svg'
+import JeunesseTopIllustration from "../assets/img/logo/jeunesse-top-illustration.svg"
 
 const Features = () => {
   return (
@@ -24,39 +24,48 @@ const Features = () => {
           <div className="col-lg-4 col-md-6">
             <div className="feature-box box-style jeunesse-top-logo">
               <div className="feature-icon box-icon-style">
-                <img src={JeunesseTopIllustration} width="70" alt="logo-jeunesse"/>
+                <img
+                  src={JeunesseTopIllustration}
+                  width="70"
+                  alt="logo-jeunesse"
+                />
               </div>
               <div className="box-content-style feature-content">
                 <h4>Bien être</h4>
-                <p>
-                  Des Produits aux propriétés naturelles.
-                </p>
+                <p>Retrouver votre vitalité, une qualité de peau saine. Se sentir bien de l'intérieur comme à l'extérieur.</p>
               </div>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="feature-box box-style jeunesse-top-logo">
-            <div className="feature-icon box-icon-style">
-                <img src={JeunesseTopIllustration} width="70" alt="logo-jeunesse"/>
+              <div className="feature-icon box-icon-style">
+                <img
+                  src={JeunesseTopIllustration}
+                  width="70"
+                  alt="logo-jeunesse"
+                />
               </div>
               <div className="box-content-style feature-content">
                 <h4>Résultats</h4>
                 <p>
-                 Des résultats rapidement visibles
+                  Des produits exceptionnels basés sur une technologie
+                  de pointe et la recherche sur les cellules souches.
                 </p>
               </div>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="feature-box box-style jeunesse-top-logo">
-            <div className="feature-icon box-icon-style">
-                <img src={JeunesseTopIllustration} width="70" alt="logo-jeunesse"/>
+              <div className="feature-icon box-icon-style">
+                <img
+                  src={JeunesseTopIllustration}
+                  width="70"
+                  alt="logo-jeunesse"
+                />
               </div>
               <div className="box-content-style feature-content">
                 <h4>Développement</h4>
-                <p>
-                  Développez votre potentiel avec Jeunesse
-                </p>
+                <p>Entreprendre en toute liberté et à la portée de tous, des opportunités qui changeront votre vie.</p>
               </div>
             </div>
           </div>

@@ -67,7 +67,7 @@
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
-                background: $theme-bg;
+                background: linear-gradient(to left, #607ac7 45%,  #29439c 100%);
                 color: $white;
                 @include transition(.3s);
             }

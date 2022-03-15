@@ -3,7 +3,7 @@
 ===========================*/
 
 .about-section {
-    background: $gray;
+    background: linear-gradient(to left, #607ac7 45%,  #29439c 100%);
     padding: 180px 0;
     position: relative;
 
@@ -108,7 +108,7 @@
                     span {
                         font-size: 40px;
                         font-weight: 600;
-                        color: $theme-color;
+                        color: $white;
                         display: block;
                         margin-bottom: 8px;
                     }

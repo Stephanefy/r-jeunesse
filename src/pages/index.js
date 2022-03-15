@@ -27,7 +27,6 @@ return (
       <Carousel/>
       <Features/>
       <About />
-      <ProductsPortfolio/>
       <Products/>
       <Contact/>
     </Layout>

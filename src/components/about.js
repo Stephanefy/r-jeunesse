@@ -31,13 +31,10 @@ const About = () => {
             <div className="col-xl-6 col-lg-6">
               <div className="about-content-wrapper">
                 <div className="section-title">
-                  <h2 className="mb-40 wow fadeInRight" data-wow-delay=".4s">
-                    Marie Rose Ah-Moye
-                  </h2>
                   <div className="d-flex my-3">
                     <div className="align-self-center">
                       <p
-                        className="ml-2 wow fadeInUp"
+                        className="ml-2 wow fadeInUp text-white"
                         data-wow-delay=".6s"
                       >
                         Mon histoire avec Jeunesse commence en 2021 lorsqu'une
@@ -45,7 +42,7 @@ const About = () => {
                       </p>
                       <br/>
                       <p
-                        className="ml-2 wow fadeInUp"
+                        className="ml-2 wow fadeInUp text-white"
                         data-wow-delay=".7s"
                       >
                         Appuyés par un comité scientifique de professeurs et
@@ -55,7 +52,7 @@ const About = () => {
                       </p>
                       <br/>
                       <p
-                        className="ml-2 wow fadeInUp"
+                        className="ml-2 wow fadeInUp text-white"
                         data-wow-delay=".8s"
                       >
                         Jeunesse m'a permis de retrouver Bien-être et confiance
