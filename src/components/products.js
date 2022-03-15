@@ -49,7 +49,7 @@ const Products = () => {
               </div>
               <div className="portfolio-overlay naara">
                 <div className="overlay-content">
-                  <h3>Naära</h3>
+                  <h3 style={{color: '#fff'}}>Naära</h3>
                   <p>
                   La Boisson Beauté Naära est un complément alimentaire qui combine 11 000 mg d'hydrolysat de collagène avec des nutriments de beauté pour préserver le capital jeunesse des cheveux, de la peau et des ongles.
                   </p>
@@ -70,7 +70,7 @@ const Products = () => {
               </div>
               <div className="portfolio-overlay reserve">
                 <div className="overlay-content">
-                  <h3>Reserve</h3>
+                  <h3 style={{color: '#fff'}}>Reserve</h3>
                   <p>
                   Boostez votre santé avec Reserve, un mélange de superfruits avec de l’extrait de pépins de raisin titré en resvératrol issu
                   de la recherche scientifique, de thé vert et d’aloe vera. Chaque fruit de Reserve a été spécialement sélectionné pour son
@@ -93,7 +93,7 @@ const Products = () => {
               </div>
               <div className="portfolio-overlay revita-blu">
                 <div className="overlay-content">
-                  <h3>Revita Blu</h3>
+                  <h3 style={{color: '#fff'}}>Revita Blu</h3>
                   <p>
                     RevitaBlū™ est un mélange végétal composé d’algues bleues,
                     de baies d’argousier, d’aloe vera et de poudre d’eau de noix

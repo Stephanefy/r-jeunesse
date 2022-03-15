@@ -44,8 +44,8 @@ const ReserveProductPage = () => {
         >
 
         </div>
-        <div className="row d-flex justify-content-center mt-5">
-          <div className="col-xl-3 col-lg-3 col-md-12">
+        <div className="row d-flex justify-content-center mt-5 mx-auto">
+          <div className="col-xl-3 col-lg-3 col-sm-12">
             <div
               className="footer-widget mb-60 wow fadeInUp"
               data-wow-delay=".4s"
@@ -60,7 +60,7 @@ const ReserveProductPage = () => {
               </ul>
             </div>
           </div>
-          <div className="col-xl-3 col-lg-3 col-md-12">
+          <div className="col-xl-2 col-lg-2 col-md-12">
             <div
               className="footer-widget mb-60 wow fadeInRight"
               data-wow-delay=".8s"
