@@ -27,6 +27,24 @@ const Layout = ({ isNotFound, children, isNotRoot }) => {
 
   const isBrowser = typeof window !== "undefined"
 
+  const onScroll = () => {
+    let sections = document.querySelectorAll('.page-scroll');
+    let scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+    for (let i = 0; i < sections.length; i++) {
+      let currLink = sections[i];
+      let val = currLink.getAttribute('href');
+      let refElement = document.querySelector(val.split('/')[1] ? val.split('/')[1] : val);
+      let scrollTopMinus = scrollPos + 73;
+      if (refElement && refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
+        document.querySelector('.page-scroll').classList.remove('active');
+        currLink.classList.add('active');
+      } else {
+        currLink.classList.remove('active');
+      }
+    }
+  };
+
 
   React.useEffect(() => {
 
@@ -66,6 +84,10 @@ const Layout = ({ isNotFound, children, isNotRoot }) => {
 
         	// section menu active
 
+      window.document.addEventListener('scroll', onScroll);
+  
+  
+      return () => window.removeEventListener('scroll', onScroll);
 
 
 
@@ -94,7 +116,7 @@ const Layout = ({ isNotFound, children, isNotRoot }) => {
 		};
 	}
     
-  }, [])
+  }, [onScroll, isBrowser])
 
 
   return (
