@@ -6,6 +6,10 @@
     position: relative;
     z-index: 3;
 
+    #cta-title {
+        color: #fff;
+    }
+
     &.cta-bg {
         clip-path: polygon(0 0, 100% 12%, 100% 88%, 0 100%);
         z-index: 3;

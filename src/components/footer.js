@@ -26,6 +26,9 @@ const Footer = () => {
                         <li>
                             <a href="https://www.jeunesseglobal.com/fr-FR/shopping/notice?destination=signup">Rejoindre Jeunesse</a>
                         </li>
+                        <li>
+                            <a href="https://shop.jeunesseglobal.com/Rosa3103/catalog/products">Ma boutique</a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -107,6 +107,11 @@ const Header = ({ siteTitle, isNotRoot }) => {
                       </a>
                     )}{" "}
                   </li>
+                  <li className="nav-item" onClick={() => handleIsActive(4)}>
+                      <a href="https://shop.jeunesseglobal.com/Rosa3103/catalog/products">
+                        Boutique
+                      </a>
+                  </li>
                 </ul>
                 <div className="header-btn">
                 {isNotRoot ? (

@@ -8,13 +8,30 @@ import ZenLogo from "../assets/img/logo/zenBodiSmallLogo.png"
 import { Link } from "gatsby"
 import Reserve from "../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.webp"
 import RevitaBlu from "../assets/img/portfolio/revitablu-package.png"
-import Naara from '../assets/img/portfolio/naara-eu-product-500.png'
+import Naara from "../assets/img/portfolio/naara-eu-product-500.png"
+import { Splide, SplideSlide } from "@splidejs/react-splide"
+import "@splidejs/splide/dist/css/themes/splide-default.min.css"
 
 const Products = () => {
+
+  const splideRef = React.useRef()
+
+  React.useEffect( () => {
+    if ( splideRef.current ) {
+
+      console.log(splideRef.current.splide.Components.Pagination.items)
+
+      splideRef.current.splide.Components.Pagination.items.forEach(i =>
+        i.button.classList.add('custom-pagination')
+      )      
+    }
+  },[]);
+
+
   return (
     <section id="produits" className="service-section pt-130">
       <div className="container">
-      <div className="row align-items-end">
+        <div className="row align-items-end">
           <div className="col-xl-6 col-lg-6">
             <div className="section-title mb-60">
               <h2 className="wow fadeInUp" data-wow-delay=".4s">
@@ -49,9 +66,12 @@ const Products = () => {
               </div>
               <div className="portfolio-overlay naara">
                 <div className="overlay-content">
-                  <h3 style={{color: '#fff'}}>Naära</h3>
+                  <h3 style={{ color: "#fff" }}>Naära</h3>
                   <p>
-                  La Boisson Beauté Naära est un complément alimentaire qui combine 11 000 mg d'hydrolysat de collagène avec des nutriments de beauté pour préserver le capital jeunesse des cheveux, de la peau et des ongles.
+                    La Boisson Beauté Naära est un complément alimentaire qui
+                    combine 11 000 mg d'hydrolysat de collagène avec des
+                    nutriments de beauté pour préserver le capital jeunesse des
+                    cheveux, de la peau et des ongles.
                   </p>
                   <Link
                     to="/produits/naara"
@@ -70,11 +90,14 @@ const Products = () => {
               </div>
               <div className="portfolio-overlay reserve">
                 <div className="overlay-content">
-                  <h3 style={{color: '#fff'}}>Reserve</h3>
+                  <h3 style={{ color: "#fff" }}>Reserve</h3>
                   <p>
-                  Boostez votre santé avec Reserve, un mélange de superfruits avec de l’extrait de pépins de raisin titré en resvératrol issu
-                  de la recherche scientifique, de thé vert et d’aloe vera. Chaque fruit de Reserve a été spécialement sélectionné pour son
-                  profil nutritionnel et ses qualités gustatives. De meilleurs ingrédients pour un meilleur vous.
+                    Boostez votre santé avec Reserve, un mélange de superfruits
+                    avec de l’extrait de pépins de raisin titré en resvératrol
+                    issu de la recherche scientifique, de thé vert et d’aloe
+                    vera. Chaque fruit de Reserve a été spécialement sélectionné
+                    pour son profil nutritionnel et ses qualités gustatives. De
+                    meilleurs ingrédients pour un meilleur vous.
                   </p>
                   <Link
                     to="/produits/reserve"
@@ -89,11 +112,11 @@ const Products = () => {
           <div className="col-lg-4 col-md-6 grid-item web graphic">
             <div className="portfolio-item-wrapper">
               <div className="portfolio-img">
-                <img src={RevitaBlu} alt="Revita Blu"/>
+                <img src={RevitaBlu} alt="Revita Blu" />
               </div>
               <div className="portfolio-overlay revita-blu">
                 <div className="overlay-content">
-                  <h3 style={{color: '#fff'}}>Revita Blu</h3>
+                  <h3 style={{ color: "#fff" }}>Revita Blu</h3>
                   <p>
                     RevitaBlū™ est un mélange végétal composé d’algues bleues,
                     de baies d’argousier, d’aloe vera et de poudre d’eau de noix
@@ -123,130 +146,179 @@ const Products = () => {
             </div>
           </div>
         </div>
-
         <div className="row">
-          <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style service-boxes">
-              <a href="https://www.jeunesseglobal.com/fr-FR/revitablu"></a>
-              <div
-                className="service-icon box-icon-style"
-                style={{ background: "#0397b2", border: "solid 1px #0397b2" }}
-              >
-                <img src={RevitaBluLogo} alt="revita-blu" width="80" />
+          <Splide
+            options={{
+              autoplay: true,
+              type: "loop",
+              arrows: "slider",
+              rewind: true,
+            }}
+            ref={ splideRef }
+            renderControls={() => (
+              <div className="splide__arrows">
+                <button className="splide__arrow splide__arrow--prev custom-prev">
+                  <span aria-hidden="true">
+                    <i className="lni lni-arrow-left"></i>
+                  </span>
+                </button>
+                <button className="splide__arrow splide__arrow--next custom-next">
+                  <span aria-hidden="true">
+                    <i className="lni lni-arrow-right"></i>
+                  </span>
+                </button>
+                
               </div>
-              <div className="box-content-style service-content">
-                <h4>Revitablu</h4>
-                <p>
-                  Formulé par un pionnier de la recherche sur les cellules
-                  souches, RevitaBlū™ est un mélange végétal composé d’algues
-                  bleues, de baies d’argousier, d’aloe vera et de poudre d’eau
-                  de noix de coco.
-                </p>
+            )}
+          >
+            <SplideSlide>
+              <div className="col-lg-4 col-md-6 mx-auto">
+                <div className="service-box box-style service-boxes">
+                  <a href="https://www.jeunesseglobal.com/fr-FR/revitablu"></a>
+                  <div
+                    className="service-icon box-icon-style"
+                    style={{
+                      background: "#0397b2",
+                      border: "solid 1px #0397b2",
+                    }}
+                  >
+                    <img src={RevitaBluLogo} alt="revita-blu" width="80" />
+                  </div>
+                  <div className="box-content-style service-content">
+                    <h4>Revitablu</h4>
+                    <p>
+                      Formulé par un pionnier de la recherche sur les cellules
+                      souches, RevitaBlū™ est un mélange végétal composé
+                      d’algues bleues, de baies d’argousier, d’aloe vera et de
+                      poudre d’eau de noix de coco.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style service-boxes">
-              <a href="https://www.jeunesseglobal.com/fr-FR/reserve"></a>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="col-lg-4 col-md-6 mx-auto">
+                <div className="service-box box-style service-boxes">
+                  <a href="https://www.jeunesseglobal.com/fr-FR/reserve"></a>
 
-              <div
-                className="service-icon box-icon-style"
-                style={{ background: "#1f1442", border: "solid 1px #1f1442" }}
-              >
-                <img src={ReserveLogo} alt="reserve" width="80" />
+                  <div
+                    className="service-icon box-icon-style"
+                    style={{
+                      background: "#1f1442",
+                      border: "solid 1px #1f1442",
+                    }}
+                  >
+                    <img src={ReserveLogo} alt="reserve" width="80" />
+                  </div>
+                  <div className="box-content-style service-content">
+                    <h4>Reserve</h4>
+                    <p>
+                      Reserve est un délicieux complément alimentaire qui
+                      contient de l’extrait de pépins de raisin titré en
+                      resvératrol, de l’aloe vera en poudre, des extraits de
+                      baies d’açaï et de feuilles de thé vert.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="box-content-style service-content">
-                <h4>Reserve</h4>
-                <p>
-                  Reserve est un délicieux complément alimentaire qui contient
-                  de l’extrait de pépins de raisin titré en resvératrol, de
-                  l’aloe vera en poudre, des extraits de baies d’açaï et de
-                  feuilles de thé vert.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style service-boxes">
-              <a href="https://www.jeunesseglobal.com/fr-FR/naara"></a>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="col-lg-4 col-md-6 mx-auto">
+                <div className="service-box box-style service-boxes">
+                  <a href="https://www.jeunesseglobal.com/fr-FR/naara"></a>
 
-              <div
-                className="service-icon box-icon-style"
-                style={{ background: "#c9006b", border: "solid 1px #c9006b" }}
-              >
-                <img src={NaaraLogo} alt="reserve" width="80" />
+                  <div
+                    className="service-icon box-icon-style"
+                    style={{
+                      background: "#c9006b",
+                      border: "solid 1px #c9006b",
+                    }}
+                  >
+                    <img src={NaaraLogo} alt="reserve" width="80" />
+                  </div>
+                  <div className="box-content-style service-content">
+                    <h4>Naära</h4>
+                    <p>
+                      La Boisson Beauté Naära est un complément alimentaire qui
+                      combine 11 000 mg d'hydrolysat de collagène avec des
+                      nutriments de beauté pour préserver le capital jeunesse
+                      des cheveux, de la peau et des ongles.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="box-content-style service-content">
-                <h4>Naära</h4>
-                <p>
-                  La Boisson Beauté Naära est un complément alimentaire qui
-                  combine 11 000 mg d'hydrolysat de collagène avec des
-                  nutriments de beauté pour préserver le capital jeunesse des
-                  cheveux, de la peau et des ongles.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style service-boxes">
-              <a href="https://www.jeunesseglobal.com/fr-FR/am/pmessentials"></a>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="col-lg-4 col-md-6 mx-auto">
+                <div className="service-box box-style service-boxes">
+                  <a href="https://www.jeunesseglobal.com/fr-FR/am/pmessentials"></a>
 
-              <div
-                className="service-icon box-icon-style"
-                style={{ background: "#fff", border: "solid 1px #e39d68" }}
-              >
-                <img src={AMPMLogo} alt="reserve" width="60" />
+                  <div
+                    className="service-icon box-icon-style"
+                    style={{ background: "#fff", border: "solid 1px #e39d68" }}
+                  >
+                    <img src={AMPMLogo} alt="reserve" width="60" />
+                  </div>
+                  <div className="box-content-style service-content">
+                    <h4>AM&PM essentials</h4>
+                    <p>
+                      Formulé et élaboré par un physicien certifié et nommé au
+                      prix Nobel, AM & PM Essentials vous fourni les nutriments
+                      que votre corps à besoin le matin et le soir, améliorant
+                      votre qulaité de vie en tout point.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="box-content-style service-content">
-                <h4>AM&PM essentials</h4>
-                <p>
-                  Formulé et élaboré par un physicien certifié et nommé au prix
-                  Nobel, AM & PM Essentials vous fourni les nutriments que votre
-                  corps à besoin le matin et le soir, améliorant votre qulaité
-                  de vie en tout point.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style service-boxes">
-              <a href="https://www.jeunesseglobal.com/fr-FR/luminesce"></a>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="col-lg-4 col-md-6 mx-auto">
+                <div className="service-box box-style service-boxes">
+                  <a href="https://www.jeunesseglobal.com/fr-FR/luminesce"></a>
 
-              <div
-                className="service-icon box-icon-style"
-                style={{ background: "#3da0ce", border: "solid 1px #3da0ce" }}
-              >
-                <img src={LuminesceLogo} alt="reserve" width="60" />
+                  <div
+                    className="service-icon box-icon-style"
+                    style={{
+                      background: "#3da0ce",
+                      border: "solid 1px #3da0ce",
+                    }}
+                  >
+                    <img src={LuminesceLogo} alt="reserve" width="60" />
+                  </div>
+                  <div className="box-content-style service-content">
+                    <h4>Gamme Luminesce</h4>
+                    <p>
+                      La ligne de soins pour la peau Luminesce® redonne à votre
+                      peau la vitalité et l’éclat de la jeunesse, estompe les
+                      rides et les ridules et révèle la luminosité unique de
+                      votre peau.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="box-content-style service-content">
-                <h4>Gamme Luminesce</h4>
-                <p>
-                  La ligne de soins pour la peau Luminesce® redonne à votre peau
-                  la vitalité et l’éclat de la jeunesse, estompe les rides et
-                  les ridules et révèle la luminosité unique de votre peau.
-                </p>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="col-lg-4 col-md-6 mx-auto">
+                <div className="service-box box-style service-boxes">
+                  <a href="https://www.jeunesseglobal.com/fr-FR/zen"></a>
+                  <div
+                    className="service-icon box-icon-style"
+                    style={{ background: "#fff", border: "solid 1px #c3012f" }}
+                  >
+                    <img src={ZenLogo} alt="reserve" width="80" />
+                  </div>
+                  <div className="box-content-style service-content">
+                    <h4>Gamme Zen Bodi</h4>
+                    <p>
+                      ZEN a aidé des centaines de milliers de personnes dans le
+                      monde entier à transformer leur santé, équilibrer leur
+                      corps et vivre pleinement. C’est votre tour maintenant !
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="service-box box-style service-boxes">
-              <a href="https://www.jeunesseglobal.com/fr-FR/zen"></a>
-              <div
-                className="service-icon box-icon-style"
-                style={{ background: "#fff", border: "solid 1px #c3012f" }}
-              >
-                <img src={ZenLogo} alt="reserve" width="80" />
-              </div>
-              <div className="box-content-style service-content">
-                <h4>Gamme Zen Bodi</h4>
-                <p>
-                  ZEN a aidé des centaines de milliers de personnes dans le
-                  monde entier à transformer leur santé, équilibrer leur corps
-                  et vivre pleinement. C’est votre tour maintenant !
-                </p>
-              </div>
-            </div>
-          </div>
+            </SplideSlide>
+          </Splide>
         </div>
       </div>
     </section>
