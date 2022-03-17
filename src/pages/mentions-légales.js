@@ -24,7 +24,7 @@ const LegalNoticePage = ({location}) => {
             <p className="mb-2">Éditeur du Site :</p>
             <p>
               Distributeur indépendant Jeunesse Marie-Rose Ah-Moye Numéro de
-              SIRET : à définir
+              SIRET : 321 325 243 00038
             </p>
             <p className="mt-2 mb-2">Hébergement :</p>
             <p>

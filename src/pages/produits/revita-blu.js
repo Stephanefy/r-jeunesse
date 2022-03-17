@@ -82,7 +82,7 @@ const RevitaBlu = () => {
         </div>
         <div className="text-center">
           <a 
-          href="https://www.jeunesseglobal.com/fr-FR/am/pmessentials"
+          href="https://rosa3103.jeunesseglobal.com/fr-FR/revitablu"
           className="theme-btn revita-blu-button d-inline-block mx-auto my-5"
           >
             Plus d'informations

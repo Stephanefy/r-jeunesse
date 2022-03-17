@@ -65,7 +65,7 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-                <form action="assets/php/mail.php" className="contact-form">
+                <form action="assets/php/mail.php" className="contact-form" data-netlify="true">
                   <div className="row">
                     <div className="col-md-6">
                       <input

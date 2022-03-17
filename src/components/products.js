@@ -5,6 +5,7 @@ import NaaraLogo from "../assets/img/logo/naara-eu-logo.png"
 import AMPMLogo from "../assets/img/logo/am-pm-essentials--trans-logo.svg"
 import LuminesceLogo from "../assets/img/logo/luminesceLogo_fr.png"
 import ZenLogo from "../assets/img/logo/zenBodiSmallLogo.png"
+import Finiti from "../assets/img/logo/finitiGrey_en-US.png"
 import { Link } from "gatsby"
 import Reserve from "../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.webp"
 import RevitaBlu from "../assets/img/portfolio/revitablu-package.png"
@@ -13,20 +14,17 @@ import { Splide, SplideSlide } from "@splidejs/react-splide"
 import "@splidejs/splide/dist/css/themes/splide-default.min.css"
 
 const Products = () => {
-
   const splideRef = React.useRef()
 
-  React.useEffect( () => {
-    if ( splideRef.current ) {
-
+  React.useEffect(() => {
+    if (splideRef.current) {
       console.log(splideRef.current.splide.Components.Pagination.items)
 
       splideRef.current.splide.Components.Pagination.items.forEach(i =>
-        i.button.classList.add('custom-pagination')
-      )      
+        i.button.classList.add("custom-pagination")
+      )
     }
-  },[]);
-
+  }, [])
 
   return (
     <section id="produits" className="service-section pt-130">
@@ -154,7 +152,7 @@ const Products = () => {
               arrows: "slider",
               rewind: true,
             }}
-            ref={ splideRef }
+            ref={splideRef}
             renderControls={() => (
               <div className="splide__arrows">
                 <button className="splide__arrow splide__arrow--prev custom-prev">
@@ -167,14 +165,13 @@ const Products = () => {
                     <i className="lni lni-arrow-right"></i>
                   </span>
                 </button>
-                
               </div>
             )}
           >
             <SplideSlide>
               <div className="col-lg-4 col-md-6 mx-auto">
+                  <a href="https://rosa3103.jeunesseglobal.com/fr-FR/revitablu">
                 <div className="service-box box-style service-boxes">
-                  <a href="https://www.jeunesseglobal.com/fr-FR/revitablu"></a>
                   <div
                     className="service-icon box-icon-style"
                     style={{
@@ -194,12 +191,13 @@ const Products = () => {
                     </p>
                   </div>
                 </div>
+                </a>
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="col-lg-4 col-md-6 mx-auto">
+                  <a href="https://rosa3103.jeunesseglobal.com/fr-FR/reserve" >
                 <div className="service-box box-style service-boxes">
-                  <a href="https://www.jeunesseglobal.com/fr-FR/reserve"></a>
 
                   <div
                     className="service-icon box-icon-style"
@@ -220,12 +218,13 @@ const Products = () => {
                     </p>
                   </div>
                 </div>
+                </a>
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="col-lg-4 col-md-6 mx-auto">
+                  <a href="https://rosa3103.jeunesseglobal.com/fr-FR/naara">
                 <div className="service-box box-style service-boxes">
-                  <a href="https://www.jeunesseglobal.com/fr-FR/naara"></a>
 
                   <div
                     className="service-icon box-icon-style"
@@ -234,7 +233,7 @@ const Products = () => {
                       border: "solid 1px #c9006b",
                     }}
                   >
-                    <img src={NaaraLogo} alt="reserve" width="80" />
+                    <img src={NaaraLogo} alt="Naara" width="80" />
                   </div>
                   <div className="box-content-style service-content">
                     <h4>Naära</h4>
@@ -246,76 +245,117 @@ const Products = () => {
                     </p>
                   </div>
                 </div>
+                </a>
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="col-lg-4 col-md-6 mx-auto">
-                <div className="service-box box-style service-boxes">
-                  <a href="https://www.jeunesseglobal.com/fr-FR/am/pmessentials"></a>
-
-                  <div
-                    className="service-icon box-icon-style"
-                    style={{ background: "#fff", border: "solid 1px #e39d68" }}
-                  >
-                    <img src={AMPMLogo} alt="reserve" width="60" />
+                <a href="https://rosa3103.jeunesseglobal.com/fr-FR/am/pmessentials">
+                  <div className="service-box box-style service-boxes">
+                    <div
+                      className="service-icon box-icon-style"
+                      style={{
+                        background: "#fff",
+                        border: "solid 1px #e39d68",
+                      }}
+                    >
+                      <img src={AMPMLogo} alt="am pm essentials" width="60" />
+                    </div>
+                    <div className="box-content-style service-content">
+                      <h4>AM&PM essentials</h4>
+                      <p>
+                        Formulé et élaboré par un physicien certifié et nommé au
+                        prix Nobel, AM & PM Essentials vous fourni les
+                        nutriments que votre corps à besoin le matin et le soir,
+                        améliorant votre qulaité de vie en tout point.
+                      </p>
+                    </div>
                   </div>
-                  <div className="box-content-style service-content">
-                    <h4>AM&PM essentials</h4>
-                    <p>
-                      Formulé et élaboré par un physicien certifié et nommé au
-                      prix Nobel, AM & PM Essentials vous fourni les nutriments
-                      que votre corps à besoin le matin et le soir, améliorant
-                      votre qulaité de vie en tout point.
-                    </p>
-                  </div>
-                </div>
+                </a>
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="col-lg-4 col-md-6 mx-auto">
-                <div className="service-box box-style service-boxes">
-                  <a href="https://www.jeunesseglobal.com/fr-FR/luminesce"></a>
-
-                  <div
-                    className="service-icon box-icon-style"
-                    style={{
-                      background: "#3da0ce",
-                      border: "solid 1px #3da0ce",
-                    }}
-                  >
-                    <img src={LuminesceLogo} alt="reserve" width="60" />
+                <a href="https://rosa3103.jeunesseglobal.com/fr-FR/luminesce">
+                  <div className="service-box box-style service-boxes">
+                    <div
+                      className="service-icon box-icon-style"
+                      style={{
+                        background: "#3da0ce",
+                        border: "solid 1px #3da0ce",
+                      }}
+                    >
+                      <img
+                        src={LuminesceLogo}
+                        alt="gamme Luminesce"
+                        width="60"
+                      />
+                    </div>
+                    <div className="box-content-style service-content">
+                      <h4>Gamme Luminesce</h4>
+                      <p>
+                        La ligne de soins pour la peau Luminesce® redonne à
+                        votre peau la vitalité et l’éclat de la jeunesse,
+                        estompe les rides et les ridules et révèle la luminosité
+                        unique de votre peau.
+                      </p>
+                    </div>
                   </div>
-                  <div className="box-content-style service-content">
-                    <h4>Gamme Luminesce</h4>
-                    <p>
-                      La ligne de soins pour la peau Luminesce® redonne à votre
-                      peau la vitalité et l’éclat de la jeunesse, estompe les
-                      rides et les ridules et révèle la luminosité unique de
-                      votre peau.
-                    </p>
-                  </div>
-                </div>
+                </a>
               </div>
             </SplideSlide>
             <SplideSlide>
               <div className="col-lg-4 col-md-6 mx-auto">
-                <div className="service-box box-style service-boxes">
-                  <a href="https://www.jeunesseglobal.com/fr-FR/zen"></a>
-                  <div
-                    className="service-icon box-icon-style"
-                    style={{ background: "#fff", border: "solid 1px #c3012f" }}
-                  >
-                    <img src={ZenLogo} alt="reserve" width="80" />
+                <a href="https://rosa3103.jeunesseglobal.com/fr-FR/zen">
+                  <div className="service-box box-style service-boxes">
+                    <div
+                      className="service-icon box-icon-style"
+                      style={{
+                        background: "#fff",
+                        border: "solid 1px #c3012f",
+                      }}
+                    >
+                      <img src={ZenLogo} alt="Gamme Zen Bodi" width="80" />
+                    </div>
+                    <div className="box-content-style service-content">
+                      <h4>Gamme Zen Bodi</h4>
+                      <p>
+                        ZEN a aidé des centaines de milliers de personnes dans
+                        le monde entier à transformer leur santé, équilibrer
+                        leur corps et vivre pleinement. C’est votre tour
+                        maintenant !
+                      </p>
+                    </div>
                   </div>
-                  <div className="box-content-style service-content">
-                    <h4>Gamme Zen Bodi</h4>
-                    <p>
-                      ZEN a aidé des centaines de milliers de personnes dans le
-                      monde entier à transformer leur santé, équilibrer leur
-                      corps et vivre pleinement. C’est votre tour maintenant !
-                    </p>
+                </a>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="col-lg-4 col-md-6 mx-auto">
+                <a href="https://rosa3103.jeunesseglobal.com/fr-FR/">
+                  <div className="service-box box-style service-boxes">
+                    <div
+                      className="service-icon box-icon-style"
+                      style={{
+                        background: "#fff",
+                        border: "solid 1px #ED5151",
+                      }}
+                    >
+                      <img src={Finiti} alt="Finiti" width="50" />
+                    </div>
+                    <div className="box-content-style service-content">
+                      <h4>Finiti</h4>
+                      <p>
+                        FINITI® contient un mélange unique d'ingrédients qui
+                        renforcent la santé cellulaire naturelle de votre corps.
+                        Finiti est notre complément le plus avancé, un mélange
+                        exclusif qui combine savamment des extraits de fruits et
+                        de légumes pour vous permettre de vivre mieux. 60
+                        capsules par flacon.
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </SplideSlide>
           </Splide>

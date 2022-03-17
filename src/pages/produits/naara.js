@@ -112,7 +112,7 @@ const NaaraProductPage = () => {
         </div>
         <div className="text-center">
           <a
-            href="https://www.jeunesseglobal.com/fr-FR/naara"
+            href="https://rosa3103.jeunesseglobal.com/fr-FR/naara"
             className="theme-btn naara-button d-inline-block mx-auto my-5"
           >
             <span>Plus d'informations</span>

@@ -89,7 +89,7 @@ const ReserveProductPage = () => {
         </div>
         <div className="text-center">
           <a
-            href="https://www.jeunesseglobal.com/fr-FR/reserve"
+            href="https://rosa3103.jeunesseglobal.com/fr-FR/reserve"
             className="theme-btn reserve-btn d-inline-block mx-auto my-5"
           >
             <span>Plus d'informations</span>
