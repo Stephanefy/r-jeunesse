@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "../../components/layout"
 import AmPmLogo from "../../assets/img/logo/am-pm-essentials--trans-logo.svg"
 import AmPmImg from "../../assets/img/portfolio/EU_AM-PM-product-img.png"
+import Seo from "../../components/seo"
 
 const ampm = () => {
   return (
     <Layout isNotRoot={true}>
+      <Seo title="AM PM essentials"/>
       <section id="ampm" className="container-md ">
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-6">

@@ -3,11 +3,13 @@ import Layout from "../../components/layout"
 import ReserveLogo from "../../assets/img/logo/Jeunesse-Reserve-TM-white.png"
 import ReserveImg from "../../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.webp"
 import ReserveBg from '../../assets/img/bg/reserve-bg.jpeg'
+import Seo from "../../components/seo"
 
 
 const ReserveProductPage = () => {
   return (
     <Layout isNotRoot={true}>
+      <Seo title="Reserve"/>
       <section id="reserve">
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-6">

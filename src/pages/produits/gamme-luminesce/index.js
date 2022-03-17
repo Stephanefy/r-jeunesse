@@ -5,10 +5,12 @@ import LuminesceImg from "../../../assets/img/portfolio/luminesceFamily.png"
 import LuminesceRenewal from "../../../assets/img/portfolio/lulminesce-renewal.png"
 import LuminesceMoisturizer from "../../../assets/img/portfolio/luminesce-moisturizer.png"
 import LuminesceSerum from "../../../assets/img/portfolio/luminesce-serum.png"
+import Seo from "../../../components/seo"
 
 const RevitaBlu = () => {
   return (
     <Layout isNotRoot={true}>
+      <Seo title={"gamme-luminesce"}/>
       <section id="revita-blu" className="container-md">
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-12">

@@ -3,10 +3,12 @@ import Layout from "../../components/layout"
 import RevitaBluLogo from "../../assets/img/logo/revita-blu-logo.png"
 import RevitaImg from "../../assets/img/portfolio/revitablu-package.png"
 import RevitaBluBg from '../../assets/img/bg/RevitaBLU_Feb10-2020_2.jpeg'
+import Seo from "../../components/seo"
 
 const RevitaBlu = () => {
   return (
     <Layout isNotRoot={true}>
+      <Seo title="Revita-Blu"/>
       <section id="revita-blu">
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-12">

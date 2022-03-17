@@ -3,10 +3,12 @@ import Layout from "../../components/layout"
 import NaaraLogo from "../../assets/img/logo/naara-eu-logo.png"
 import NaaraImg from "../../assets/img/portfolio/naara-eu-product-500.png"
 import NaaraBg from '../../assets/img/bg/hair-skin-nails-naara.jpeg'
+import Seo from "../../components/seo"
 
 const NaaraProductPage = () => {
   return (
     <Layout isNotRoot={true}>
+      <Seo title="Naära"/>
       <section id="naara">
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-6">

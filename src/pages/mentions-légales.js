@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const LegalNoticePage = ({location}) => {
 
 
   return (
     <Layout isNotRoot={true}>
+      <Seo title="mentions-légakes"/>
       <section className="container-md">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-6 col-xl-6 col-md-12 mx-auto">

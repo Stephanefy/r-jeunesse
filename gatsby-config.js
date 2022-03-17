@@ -7,7 +7,7 @@ module.exports = {
     title: `Marie Rose Ah Moye Distributeur indépendant Jeunesse`,
     description: `Distributeur Jeunesse Global à la Réunion, Découvrez l'univers de Jeunesse`,
     author: `stephanefy`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://www.rosah-jeunesse.re/`,
     keywords: `produits naturel, Bien-être, Jeunesse, Jeunesse Global Réunion`,
     image: `src/assets/logo/Jeunesse-Logo-Gray.png`
 
@@ -25,6 +25,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options:{
+        siteUrl: `https://wwww.rosah-jeunesse.re`
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -39,9 +45,66 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    // {
+    //   resolve: "gatsby-plugin-sitemap",
+    //   options: {
+    //     query: `
+    //     {
+    //       allSitePage {
+    //         nodes {
+    //           path
+    //         }
+    //     }`,
+    //     resolveSiteUrl: () => siteUrl,
+    //     resolvePages: ({
+    //       allSitePage: { nodes: allPages },
+    //     }) => {
+    //       return allPages.map(page => {
+    //         return { ...page}
+    //       })
+    //     },
+    //     serialize: ({ path, modifiedGmt }) => {
+    //       return {
+    //         url: path,
+    //         lastmod: modifiedGmt,
+    //       }
+    //     },
+    //   },
+    // }
+    // ,
+    // {
+      // {
+      //   resolve: `gatsby-plugin-sitemap`,
+      //   options: {
+      //     query: `{
+      //       site {
+      //         siteMetadata {
+      //           siteUrl
+      //         }
+      //       }
+      //       allSitePage {
+      //           nodes {
+      //             path
+      //           }
+      //       }
+      //     }`,
+      //     serialize: ({ site, allSitePage }) => {
+      //       let pages = []
+      //       allSitePage.nodes.map(path => {
+      //         pages.push({
+      //           url: site.siteMetadata.siteUrl + path,
+      //           changefreq: `daily`,
+      //           priority: 0.7,
+      //         })
+      //       })
+      //       return pages
+      //     },
+      //   },
+      // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
     {
       resolve:`gatsby-source-cloudinary`,
       options: {
@@ -52,6 +115,22 @@ module.exports = {
       prefix: `rosah-jeunesse/`
       }
     },
-    `gatsby-plugin-smoothscroll`
+    `gatsby-plugin-smoothscroll`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.rosah-jeunesse.re',
+        sitemap: 'https://www.rosah-jeunesse.re/sitemap/sitemap-0.xml',
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
+    }
   ],
 }
