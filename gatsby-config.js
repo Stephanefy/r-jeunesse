@@ -122,13 +122,14 @@ module.exports = {
         host: 'https://www.rosah-jeunesse.re',
         sitemap: 'https://www.rosah-jeunesse.re/sitemap/sitemap-0.xml',
         resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
-          },
-          production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
+        policy: [{userAgent: '*', allow: '/'}]
+        // env: {
+        //   development: {
+        //     policy: [{ userAgent: '*', disallow: ['/'] }]
+        //   },
+        //   production: {
+        //     policy: [{ userAgent: '*', allow: '/' }]
+        //   }
         }
       }
     }
