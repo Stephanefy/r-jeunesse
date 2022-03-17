@@ -130,7 +130,7 @@ module.exports = {
         //   production: {
         //     policy: [{ userAgent: '*', allow: '/' }]
         //   }
-        }
+        
       }
     }
   ],
