@@ -267,7 +267,7 @@ const Products = () => {
                         Formulé et élaboré par un physicien certifié et nommé au
                         prix Nobel, AM & PM Essentials vous fourni les
                         nutriments que votre corps à besoin le matin et le soir,
-                        améliorant votre qulaité de vie en tout point.
+                        améliorant votre qualité de vie en tout point.
                       </p>
                     </div>
                   </div>
