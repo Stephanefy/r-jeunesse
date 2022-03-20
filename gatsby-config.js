@@ -9,7 +9,7 @@ module.exports = {
     author: `stephanefy`,
     siteUrl: `https://www.rosah-jeunesse.re/`,
     keywords: `produits naturel, Bien-être, Jeunesse, Jeunesse Global Réunion`,
-    image: `src/assets/team/rosah.jpg`
+    image: `src/assets/team/rosah-402936fee595fc688b59cb9c8f5e8178.jpg`
 
   },
   plugins: [
