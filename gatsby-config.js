@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options:{
-        siteUrl: `https://wwww.rosah-jeunesse.re`
+        siteUrl: `https://www.rosah-jeunesse.re/`
       }
     },
     {
