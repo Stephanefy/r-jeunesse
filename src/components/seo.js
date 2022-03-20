@@ -21,7 +21,8 @@ function Seo({ description, lang, meta, title }) {
             description
             author,
             keywords,
-            image
+            image,
+            siteUrl
           }
         }
       }
@@ -33,7 +34,6 @@ function Seo({ description, lang, meta, title }) {
   const keywords = site.siteMetadata.keywords
 
 
-  const siteImage = image || metaImage;
 
 
   return (
@@ -51,6 +51,10 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `keywords`,
           content: keywords,
+        },
+        {
+          property: `og:url`,
+          content: siteUrl,
         },
         {
           property: `og:title`,
@@ -101,6 +105,7 @@ Seo.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  siteUrl: PropTypes.string
 }
 
 export default Seo
