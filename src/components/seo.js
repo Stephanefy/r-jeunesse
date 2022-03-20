@@ -32,6 +32,7 @@ function Seo({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
   const keywords = site.siteMetadata.keywords
+  const metaUrl = site.siteMetadata.siteUrl
 
 
 
@@ -54,7 +55,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:url`,
-          content: siteUrl,
+          content: metaUrl,
         },
         {
           property: `og:title`,
