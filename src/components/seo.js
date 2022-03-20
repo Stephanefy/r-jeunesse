@@ -58,7 +58,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: MetaImage,
+          content: `https://www.rosah-jeunesse.re/static/rosah-402936fee595fc688b59cb9c8f5e8178.jpg`
         },
         {
           property: `og:description`,
