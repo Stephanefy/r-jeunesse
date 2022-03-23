@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import MetaImage from '../assets/img/team/rosah.jpg'
 
-function Seo({ description, lang, meta, title }) {
+function Seo({ description, lang, meta, title, noIndex }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -33,8 +33,12 @@ function Seo({ description, lang, meta, title }) {
   const defaultTitle = site.siteMetadata?.title
   const keywords = site.siteMetadata.keywords
   const metaUrl = site.siteMetadata.siteUrl
+  
+  let noIndexMeta;
 
-
+  if(noIndex) {
+    noIndexMeta = <meta name="robots" content="noindex, nofollow" />
+  }
 
 
   return (
@@ -89,6 +93,9 @@ function Seo({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          noIndexMeta
+        }
       ].concat(meta)}
     />
   )
