@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Reserve from "../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.webp"
+import Reserve from "../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.png"
 import RevitaBlu from "../assets/img/portfolio/revitablu-package.png"
 import Naara from '../assets/img/portfolio/naara-eu-product-500.png'
 

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../../components/layout"
 import ReserveLogo from "../../assets/img/logo/Jeunesse-Reserve-TM-white.png"
-import ReserveImg from "../../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.webp"
+import ReserveImg from "../../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.png"
 import ReserveBg from '../../assets/img/bg/reserve-bg.jpeg'
 import Seo from "../../components/seo"
 
@@ -24,7 +24,7 @@ const ReserveProductPage = () => {
                   padding: "0.3em 0",
                 }}
               >
-                <img src={ReserveLogo} width="200" alt="logo naara" />
+                <img src={ReserveLogo} width="200" alt="logo reserve" />
               </div>
               <div className="d-flex justify-content-center">
                 <img
@@ -32,7 +32,7 @@ const ReserveProductPage = () => {
                   width="300"
                   className="wow fadeInUp"
                   data-wow-delay=".4s"
-                  alt="Naara"
+                  alt="Reserve"
                 />
               </div>
             </div>

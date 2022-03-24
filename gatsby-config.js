@@ -127,7 +127,8 @@ module.exports = {
       options: {
         sitemap: 'https://www.rosah-jeunesse.re/sitemap/sitemap-0.xml',
         resolveEnv: () => process.env.GATSBY_ENV,
-        policy: [{userAgent: '*', allow: '/'}]
+        policy: [{userAgent: '*', allow: '/'}],
+        host: null
         // env: {
         //   development: {
         //     policy: [{ userAgent: '*', disallow: ['/'] }]
