@@ -23,7 +23,7 @@ const IndexPage = ({ location }) => {
   
 return (
     <Layout>
-      <Seo/>
+      <Seo title="Accueil"/>
       <Carousel/>
       <Features/>
       <About />
