@@ -125,7 +125,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.rosah-jeunesse.re',
         sitemap: 'https://www.rosah-jeunesse.re/sitemap/sitemap-0.xml',
         resolveEnv: () => process.env.GATSBY_ENV,
         policy: [{userAgent: '*', allow: '/'}]
