@@ -21,7 +21,7 @@ const IndexPage = ({ location }) => {
     <Layout>
       <Seo
         title="Accueil"
-        description="Distributeur Jeunesse Global Réunion, Découvrez les produits Jeunesse Global, sa large gamme de produits innovants qui vous aideront dans votre recherche de Beauté et de Bien-être"
+        description="Distributeur Jeunesse Global Réunion, Découvrez les produits Jeunesse Global"
       />
       <Carousel />
       <Features />

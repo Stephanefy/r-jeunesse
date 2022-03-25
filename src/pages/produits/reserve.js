@@ -11,8 +11,7 @@ const ReserveProductPage = () => {
     <Layout isNotRoot={true}>
       <Seo 
         title="Reserve"
-        description="L'antixoxydant qui a du goût et se consomme facilement, conçu à partir d'un mélange de baies et d'un ingrédient innovant, Resveratrol.
-        Tout cela sans sucres ajoutés ni de colorants ou autres additifs"
+        description="L'antixoxydant qui a du goût et se consomme facilement"
       />
       <section id="reserve">
         <h1 className="text-center reserve-title">Reserve</h1>
