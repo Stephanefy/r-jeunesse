@@ -7,7 +7,9 @@ import Seo from "../../components/seo"
 const ampm = () => {
   return (
     <Layout isNotRoot={true}>
-      <Seo title="AM PM essentials"/>
+      <Seo 
+        title="AM PM essentials"
+      />
       <section id="ampm" className="container-md ">
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-6">

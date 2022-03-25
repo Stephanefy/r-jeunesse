@@ -189,7 +189,7 @@
             }
         },
         fail: function (data) {
-            console.log(data);
+            ''
         }
     };
 

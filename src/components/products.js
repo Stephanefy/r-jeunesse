@@ -18,7 +18,7 @@ const Products = () => {
 
   React.useEffect(() => {
     if (splideRef.current) {
-      console.log(splideRef.current.splide.Components.Pagination.items)
+      
 
       splideRef.current.splide.Components.Pagination.items.forEach(i =>
         i.button.classList.add("custom-pagination")

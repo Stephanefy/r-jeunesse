@@ -9,22 +9,19 @@ import Seo from "../../components/seo"
 const ReserveProductPage = () => {
   return (
     <Layout isNotRoot={true}>
-      <Seo title="Reserve"/>
+      <Seo 
+        title="Reserve"
+        description="L'antixoxydant qui a du goût et se consomme facilement, conçu à partir d'un mélange de baies et d'un ingrédient innovant, Resveratrol.
+        Tout cela sans sucres ajoutés ni de colorants ou autres additifs"
+      />
       <section id="reserve">
+        <h1 className="text-center reserve-title">Reserve</h1>
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-6">
             <div class="section-title mb-60">
-              <div
-                className="wow fadeInUp d-flex justify-content-center"
-                data-wow-delay=".4s"
-                style={{
-                  background: "#84276B",
-                  width: "300",
-                  margin: "auto",
-                  padding: "0.3em 0",
-                }}
-              >
-                <img src={ReserveLogo} width="200" alt="logo reserve" />
+            <div>
+              <p className="text-center fs-6">L'antixoxydant qui a du goût et se consomme facilement, conçu à partir d'un mélange de baies et d'un ingrédient innovant, Resveratrol.
+        <br />Tout cela sans sucres ajoutés ni de colorants ou autres additifs.</p>
               </div>
               <div className="d-flex justify-content-center">
                 <img
@@ -52,7 +49,7 @@ const ReserveProductPage = () => {
               className="footer-widget mb-60 wow fadeInUp"
               data-wow-delay=".4s"
             >
-              <h4 style={{ color: "#84276B" }}>Résvératrol: buvez sans modération</h4>
+              <h4 className="reserve-title">Résvératrol: buvez sans modération</h4>
               <ul style={{ listStyleType: "circle" }}>
                 <li className="my-1">Polyphénol connu</li>
                 <li className="my-1">Objet de recherches depuis des décennies</li>
@@ -67,7 +64,7 @@ const ReserveProductPage = () => {
               className="footer-widget mb-60 wow fadeInRight"
               data-wow-delay=".8s"
             >
-              <h4 style={{ color: "#84276B" }}>Des supers fruits</h4>
+              <h4 className="reserve-title">Des supers fruits</h4>
               <ul style={{ listStyleType: "circle" }}>
                 <li className="my-1">Objet de recherches scientifique</li>
                 <li className="my-1">Profil nutritionnel</li>
@@ -80,7 +77,7 @@ const ReserveProductPage = () => {
               className="footer-widget mb-60 wow fadeInRight"
               data-wow-delay=".8s"
             >
-              <h4 style={{ color: "#84276B" }}>Sucrés naturellement</h4>
+              <h4 className="reserve-title">Sucrés naturellement</h4>
               <ul style={{ listStyleType: "circle" }}>
                 <li className="my-1">Sans arômes artificiels</li>
                 <li className="my-1">Sans colorants artificiels</li>

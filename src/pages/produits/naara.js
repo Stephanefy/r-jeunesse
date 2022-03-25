@@ -2,30 +2,27 @@ import React from "react"
 import Layout from "../../components/layout"
 import NaaraLogo from "../../assets/img/logo/naara-eu-logo.png"
 import NaaraImg from "../../assets/img/portfolio/naara-eu-product-500.png"
-import NaaraBg from '../../assets/img/bg/hair-skin-nails-naara.jpeg'
+import NaaraBg from "../../assets/img/bg/hair-skin-nails-naara.jpeg"
 import Seo from "../../components/seo"
 
 const NaaraProductPage = () => {
   return (
     <Layout isNotRoot={true}>
-      <Seo title="Naära"/>
+      <Seo
+        title="Boisson beauté Naära"
+        description="Boisson beauté composée de collagène et de nutriments nécéssaires au maintient de votre capital jeunesse"
+      />
       <section id="naara">
-        <div className="row d-flex justify-content-center">
+        <h1 className="text-center naara-title">Boisson beauté Naära</h1>
+
+        <div className="row d-flex justify-content-center mt-5">
           <div class="col-xl-6 col-lg-6">
             <div class="section-title mb-60">
-              <div
-                className="wow fadeInUp d-flex justify-content-center"
-                data-wow-delay=".4s"
-                style={{
-                  background: "#b00057",
-                  width: "150px",
-                  margin: "auto",
-                  padding: "0.3em 0",
-                }}
-              >
-                <img src={NaaraLogo} width="200" alt="logo naara" />
+              <div>
+              <p className="text-center fs-6">La Boisson Beauté Naära est un complément alimentaire qui aide à garder une peau, des cheveux et des
+ongles jeunes. Elle est composée de 11 000 mg d’hydrolysat de collagène et de nutriments de beauté.</p>
               </div>
-              <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-center mt-3">
                 <img
                   src={NaaraImg}
                   width="300"
@@ -37,21 +34,20 @@ const NaaraProductPage = () => {
             </div>
           </div>
         </div>
-        <div className="parallax"
+        <div
+          className="parallax"
           style={{
-            background:`url(${NaaraBg}) no-repeat fixed`,
-            backgroundSize: `cover`
+            background: `url(${NaaraBg}) no-repeat fixed`,
+            backgroundSize: `cover`,
           }}
-        >
-
-        </div>
+        ></div>
         <div className="row d-flex justify-content-center mt-5">
           <div className="col-xl-3 col-lg-3 col-md-12">
             <div
               className="footer-widget mb-60 wow fadeInUp"
               data-wow-delay=".4s"
             >
-              <h4 style={{ color: "#b00057" }}>Composition</h4>
+              <h4 className="naara-title">Composition</h4>
               <ul style={{ listStyleType: "circle" }}>
                 <li className="my-1">11 000 mg d’hydrolysat de collagène</li>
                 <li className="my-1">14 nutriments de beauté</li>
@@ -72,7 +68,7 @@ const NaaraProductPage = () => {
               className="footer-widget mb-60 wow fadeInRight"
               data-wow-delay=".8s"
             >
-              <h4 style={{ color: "#b00057" }}>Les bienfaits de NAÄRA</h4>
+              <h4 className="naara-title">Les bienfaits de NAÄRA</h4>
               <ul style={{ listStyleType: "circle" }}>
                 <li className="my-1">
                   La vitamine C contribue à la formation normale du collagène
@@ -97,7 +93,7 @@ const NaaraProductPage = () => {
               className="footer-widget mb-60 wow fadeInRight"
               data-wow-delay=".8s"
             >
-              <h4 style={{ color: "#b00057" }}>
+              <h4 className="naara-title">
                 Qui peut consommer la boisson beauté NAÄRA ?
               </h4>
               <p>

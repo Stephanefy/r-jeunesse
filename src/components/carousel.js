@@ -17,7 +17,7 @@ const IndexCarousel = () => {
   `)
   const heroVideo = data.allCloudinaryMedia.edges[0].node.url
 
-  console.log(heroVideo)
+  
 
   const [index, setIndex] = useState(0)
 

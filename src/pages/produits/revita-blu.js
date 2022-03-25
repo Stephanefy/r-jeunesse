@@ -8,26 +8,23 @@ import Seo from "../../components/seo"
 const RevitaBlu = () => {
   return (
     <Layout isNotRoot={true}>
-      <Seo title="Revita-Blu"/>
+      <Seo 
+        title="RevitaBlū™ le mix délicieux et rafraîchissant"
+        description="Complément alimentaire végétal composé
+        d’algues bleues, de baies d’argousier, d’aloe vera et de poudre
+        d’eau de noix de coco."
+      />
       <section id="revita-blu">
+        <h1 className="text-center revita-blu-title">RevitaBlū</h1>
         <div className="row d-flex justify-content-center">
           <div class="col-xl-6 col-lg-12">
             <div class="section-title mb-60">
-              <div
-                className="wow fadeInUp d-flex justify-content-center"
-                data-wow-delay=".4s"
-                style={{
-                  background: "#30b9c9",
-                  width: "150px",
-                  height: "150px",
-                  padding: "1em",
-                  borderRadius: "50%",
-                  margin: "auto",
-                }}
-              >
-                <img src={RevitaBluLogo} width="200" alt="logo-revita-blu" />
+              <div className="text-center">
+                <p className="fs-6">Complément alimentaire végétal composé
+        d’algues bleues, de baies d’argousier, d’aloe vera et de poudre
+        d’eau de noix de coco.</p>
               </div>
-              <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-center mt-5">
                 <img
                   src={RevitaImg}
                   width="300"
@@ -53,7 +50,7 @@ const RevitaBlu = () => {
               className="mb-60 wow fadeInUp"
               data-wow-delay=".4s"
             >
-              <h4 style={{ color: "#30b9c9" }}>Le meilleur de vous-même</h4>
+              <h4 className="revita-blu-title">Le meilleur de vous-même</h4>
               <p>
                 RevitaBlūTM est un complément alimentaire végétal composé
                 d’algues bleues, de baies d’argousier, d’aloe vera et de poudre
@@ -66,7 +63,7 @@ const RevitaBlu = () => {
               className="footer-widget mb-60 wow fadeInRight"
               data-wow-delay=".8s"
             >
-              <h4 style={{ color: "#30b9c9" }}>Caractéristiques</h4>
+              <h4 className="revita-blu-title">Caractéristiques</h4>
               <ul style={{ listStyleType: "circle" }}>
                 <li className="my-1">
                   Formule exclusive composée d'ingrédients à base de plantes{" "}

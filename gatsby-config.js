@@ -8,7 +8,6 @@ module.exports = {
     description: `Distributeur Jeunesse Global à la Réunion, Découvrez l'univers de Jeunesse`,
     author: `stephanefy`,
     siteUrl: `https://www.rosah-jeunesse.re/`,
-    keywords: `produits naturel, Bien-être, Jeunesse, Jeunesse Global Réunion`,
     image: `src/assets/team/rosah-402936fee595fc688b59cb9c8f5e8178.jpg`
 
   },
@@ -138,6 +137,6 @@ module.exports = {
         //   }
         
       }
-    }
+    },
   ],
 }

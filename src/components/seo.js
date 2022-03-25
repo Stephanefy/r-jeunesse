@@ -19,7 +19,6 @@ function Seo({ description, lang, meta, title, noIndex }) {
             title
             description
             author,
-            keywords,
             image,
             siteUrl
           }
@@ -30,7 +29,6 @@ function Seo({ description, lang, meta, title, noIndex }) {
   const image = site.siteMetadata.image
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const keywords = site.siteMetadata.keywords
   const metaUrl = site.siteMetadata.siteUrl
   
   let noIndexMeta;
@@ -51,10 +49,6 @@ function Seo({ description, lang, meta, title, noIndex }) {
         {
           name: `description`,
           content: metaDescription,
-        },
-        {
-          name: `keywords`,
-          content: keywords,
         },
         {
           property: `og:url`,

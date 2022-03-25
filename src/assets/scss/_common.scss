@@ -69,8 +69,25 @@ h2,
 h4 {
     font-weight: 600;
     background: linear-gradient(to left, #607ac7 45%,  #29439c 100%) no-repeat;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &.naara-title {
+        background: linear-gradient(rgba(#d10072, .94) 30%, rgba(#920148, .94) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    &.revita-blu-title {
+        background: linear-gradient(to bottom, #0082a1 10%,  #23b5c6 80%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &.reserve-title {
+        background: linear-gradient(rgba(#6b2c5c, .94) 30%, rgba(#150a3a, .94) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 h3,
