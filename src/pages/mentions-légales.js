@@ -7,7 +7,7 @@ const LegalNoticePage = ({location}) => {
 
   return (
     <Layout isNotRoot={true}>
-      <Seo title="mentions-légales" noIndex />
+      <Seo title="mentions-légales"/>
       <section className="container-md">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-6 col-xl-6 col-md-12 mx-auto mt-5">
