@@ -10,8 +10,8 @@ const LegalNoticePage = ({location}) => {
       <Seo title="mentions-légales" noIndex />
       <section className="container-md">
         <div className="row d-flex justify-content-center">
-          <div className="col-lg-6 col-xl-6 col-md-12 mx-auto">
-            <h2 className="text-left">Mentions légales</h2>
+          <div className="col-lg-6 col-xl-6 col-md-12 mx-auto mt-5">
+            <h1 className="text-left">Mentions légales</h1>
             <p className="legal-statement">
               Merci de lire avec attention les différentes modalités
               d’utilisation du présent site avant d’y parcourir ses pages. En

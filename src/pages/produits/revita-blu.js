@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../../components/layout"
-import RevitaBluLogo from "../../assets/img/logo/revita-blu-logo.png"
 import RevitaImg from "../../assets/img/portfolio/revitablu-package.png"
 import RevitaBluBg from '../../assets/img/bg/RevitaBLU_Feb10-2020_2.jpeg'
 import Seo from "../../components/seo"

@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../../components/layout"
-import NaaraLogo from "../../assets/img/logo/naara-eu-logo.png"
 import NaaraImg from "../../assets/img/portfolio/naara-eu-product-500.png"
 import NaaraBg from "../../assets/img/bg/hair-skin-nails-naara.jpeg"
 import Seo from "../../components/seo"

@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../../components/layout"
-import ReserveLogo from "../../assets/img/logo/Jeunesse-Reserve-TM-white.png"
 import ReserveImg from "../../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.png"
 import ReserveBg from '../../assets/img/bg/reserve-bg.jpeg'
 import Seo from "../../components/seo"
