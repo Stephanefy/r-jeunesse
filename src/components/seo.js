@@ -31,11 +31,11 @@ function Seo({ description, lang, meta, title, noIndex }) {
   const defaultTitle = site.siteMetadata?.title
   const metaUrl = site.siteMetadata.siteUrl
   
-  let noIndexMeta;
+  // let noIndexMeta;
 
-  if(noIndex) {
-    noIndexMeta = <meta name="robots" content="noindex, nofollow" />
-  }
+  // if(noIndex) {
+  //   noIndexMeta = <meta name="robots" content="noindex, nofollow" />
+  // }
 
 
   return (
@@ -86,9 +86,6 @@ function Seo({ description, lang, meta, title, noIndex }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-        {
-          noIndexMeta
-        }
       ].concat(meta)}
     />
   )
