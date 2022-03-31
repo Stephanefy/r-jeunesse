@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Reserve from "../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.png"
-import RevitaBlu from "../assets/img/portfolio/revitablu-package.png"
-import Naara from '../assets/img/portfolio/naara-eu-product-500.png'
+import { StaticImage } from "gatsby-plugin-image"
 
 const ProductsPortfolio = () => {
   return (
@@ -39,7 +37,7 @@ const ProductsPortfolio = () => {
           <div className="col-lg-4 col-md-6 grid-item beauté">
             <div className="portfolio-item-wrapper">
               <div className="portfolio-img">
-                <img src={Naara} alt="Naara" width="200" />
+                <StaticImage src="../assets/img/portfolio/naara-eu-product-500.png" alt="Naara" width="200" />
               </div>
               <div className="portfolio-overlay naara">
                 <div className="overlay-content">
@@ -60,7 +58,7 @@ const ProductsPortfolio = () => {
           <div className="col-lg-4 col-md-6 grid-item marketing web">
             <div className="portfolio-item-wrapper">
               <div className="portfolio-img">
-                <img src={Reserve} alt="reserve" />
+                <StaticImage src="../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.png" alt="reserve" />
               </div>
               <div className="portfolio-overlay reserve">
                 <div className="overlay-content">
@@ -83,7 +81,7 @@ const ProductsPortfolio = () => {
           <div className="col-lg-4 col-md-6 grid-item web graphic">
             <div className="portfolio-item-wrapper">
               <div className="portfolio-img">
-                <img src={RevitaBlu} alt="Revita Blu"/>
+                <StaticImage src="../assets/img/portfolio/revitablu-package.png" alt="Revita Blu"/>
               </div>
               <div className="portfolio-overlay revita-blu">
                 <div className="overlay-content">

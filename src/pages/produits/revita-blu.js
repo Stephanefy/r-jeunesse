@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../../components/layout"
-import RevitaImg from "../../assets/img/portfolio/revitablu-package.png"
 import RevitaBluBg from '../../assets/img/bg/RevitaBLU_Feb10-2020_2.jpeg'
 import Seo from "../../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const RevitaBlu = () => {
   return (
@@ -24,8 +24,8 @@ const RevitaBlu = () => {
         d’eau de noix de coco.</p>
               </div>
               <div className="d-flex justify-content-center mt-5">
-                <img
-                  src={RevitaImg}
+                <StaticImage
+                  src="../../assets/img/portfolio/revitablu-package.png"
                   width="300"
                   className="wow fadeInUp"
                   data-wow-delay=".4s"

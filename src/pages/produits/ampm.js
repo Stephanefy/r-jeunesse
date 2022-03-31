@@ -4,6 +4,7 @@ import AmPmLogo from "../../assets/img/logo/am-pm-essentials--trans-logo.svg"
 import AmPmImg from "../../assets/img/portfolio/EU_AM-PM-product-img.png"
 import Seo from "../../components/seo"
 
+
 const ampm = () => {
   return (
     <Layout isNotRoot={true}>

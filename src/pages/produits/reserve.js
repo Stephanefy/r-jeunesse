@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../../components/layout"
-import ReserveImg from "../../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.png"
 import ReserveBg from '../../assets/img/bg/reserve-bg.jpeg'
 import Seo from "../../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 
 const ReserveProductPage = () => {
@@ -22,8 +22,8 @@ const ReserveProductPage = () => {
         <br />Tout cela sans sucres ajoutés ni de colorants ou autres additifs.</p>
               </div>
               <div className="d-flex justify-content-center">
-                <img
-                  src={ReserveImg}
+                <StaticImage
+                  src="../../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.png"
                   width="300"
                   className="wow fadeInUp"
                   data-wow-delay=".4s"

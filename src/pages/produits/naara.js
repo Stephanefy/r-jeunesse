@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../../components/layout"
-import NaaraImg from "../../assets/img/portfolio/naara-eu-product-500.png"
 import NaaraBg from "../../assets/img/bg/hair-skin-nails-naara.jpeg"
 import Seo from "../../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
+
 
 const NaaraProductPage = () => {
   return (
@@ -22,8 +23,8 @@ const NaaraProductPage = () => {
 ongles jeunes. Elle est composée de 11 000 mg d’hydrolysat de collagène et de nutriments de beauté.</p>
               </div>
               <div className="d-flex justify-content-center mt-3">
-                <img
-                  src={NaaraImg}
+                <StaticImage
+                  src="../../assets/img/portfolio/naara-eu-product-500.png"
                   width="300"
                   className="wow fadeInUp"
                   data-wow-delay=".4s"

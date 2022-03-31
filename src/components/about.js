@@ -1,6 +1,5 @@
 import React from "react"
-import aboutImg from "../assets/img/about/image5.jpg"
-import rosahImg from "../assets/img/team/rosah.jpg"
+import { StaticImage } from "gatsby-plugin-image"
 
 const About = () => {
   return (
@@ -14,11 +13,11 @@ const About = () => {
                   className="about-img position-relative d-inline-block wow fadeInLeft"
                   data-wow-delay=".3s"
                 >
-                  <img
-                    src={rosahImg}
-                    width="150"
-                    style={{ borderRadius: "25px" }}
+                  <StaticImage
+                    src="../assets/img/team/rosah.jpg"
+                    width="500"
                     alt="ah moye marie rose"
+                    aspectRatio="21/9"
                   />
                   {/*                         
                             <div className="about-experience">
