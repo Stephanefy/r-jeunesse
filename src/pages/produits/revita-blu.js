@@ -29,6 +29,7 @@ const RevitaBlu = () => {
                   width={300}
                   className="wow fadeInUp"
                   data-wow-delay=".4s"
+                  placeholder="tracedSVG"
                   alt="img-revita-blu"
                 />
               </div>

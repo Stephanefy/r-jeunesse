@@ -27,6 +27,7 @@ const ReserveProductPage = () => {
                   width={300}
                   className="wow fadeInUp"
                   data-wow-delay=".4s"
+                  placeholder="tracedSVG"
                   alt="Reserve"
                 />
               </div>

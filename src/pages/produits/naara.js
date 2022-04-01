@@ -28,6 +28,7 @@ ongles jeunes. Elle est composée de 11 000 mg d’hydrolysat de collagène et d
                   width={300}
                   className="wow fadeInUp"
                   data-wow-delay=".4s"
+                  placeholder="tracedSVG"
                   alt="Naara"
                 />
               </div>
