@@ -21,6 +21,14 @@
         width: 46%;
         @include transform(translateY(-50%));
 
+        @media #{$xxl} {
+            left: 10%;
+        }
+
+        @media #{$lg} {
+            left: 50%;
+        }
+
         @media #{$md} {
             position: relative;
             top: 0;
@@ -43,7 +51,6 @@
             transform: matrix(0.99, 0.03, 0.12, 1, 0, 0);
 
             @media #{$md} {
-                margin-left: 3em;
                 transform: unset;
 
             }

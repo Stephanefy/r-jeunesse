@@ -8,7 +8,7 @@ const RevitaBlu = () => {
   return (
     <Layout isNotRoot={true}>
       <Seo 
-        title="RevitaBlū™ le mix délicieux et rafraîchissant"
+        title="RevitaBlū"
         description="Complément alimentaire végétal composé
         d’algues bleues, de baies d’argousier, d’aloe vera et de poudre
         d’eau de noix de coco."
@@ -26,7 +26,7 @@ const RevitaBlu = () => {
               <div className="d-flex justify-content-center mt-5">
                 <StaticImage
                   src="../../assets/img/portfolio/revitablu-package.png"
-                  width="300"
+                  width={300}
                   className="wow fadeInUp"
                   data-wow-delay=".4s"
                   alt="img-revita-blu"

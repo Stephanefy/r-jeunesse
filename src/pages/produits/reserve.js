@@ -24,7 +24,7 @@ const ReserveProductPage = () => {
               <div className="d-flex justify-content-center">
                 <StaticImage
                   src="../../assets/img/portfolio/2019-RES-FR-BOX5-REV7-PKT3-REV1-300px.png"
-                  width="300"
+                  width={300}
                   className="wow fadeInUp"
                   data-wow-delay=".4s"
                   alt="Reserve"

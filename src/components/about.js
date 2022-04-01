@@ -15,7 +15,7 @@ const About = () => {
                 >
                   <StaticImage
                     src="../assets/img/team/rosah.jpg"
-                    width="500"
+                    width={500}
                     alt="ah moye marie rose"
                     aspectRatio="21/9"
                   />

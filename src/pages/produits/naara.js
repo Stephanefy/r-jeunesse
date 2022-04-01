@@ -9,7 +9,7 @@ const NaaraProductPage = () => {
   return (
     <Layout isNotRoot={true}>
       <Seo
-        title="Boisson beauté Naära"
+        title="Naära"
         description="Boisson beauté composée de collagène et de nutriments nécéssaires au maintient de votre capital jeunesse"
       />
       <section id="naara">
@@ -25,7 +25,7 @@ ongles jeunes. Elle est composée de 11 000 mg d’hydrolysat de collagène et d
               <div className="d-flex justify-content-center mt-3">
                 <StaticImage
                   src="../../assets/img/portfolio/naara-eu-product-500.png"
-                  width="300"
+                  width={300}
                   className="wow fadeInUp"
                   data-wow-delay=".4s"
                   alt="Naara"

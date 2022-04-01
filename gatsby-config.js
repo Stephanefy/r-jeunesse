@@ -32,8 +32,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `rosah-jeunesse`,
+        short_name: `rosah-jeunesse`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
@@ -44,6 +44,37 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        // develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+        purgeOnly : ['main.scss','glightbox.min.css','tiny-slider.min.css'], // Purge only these files/folders
+        purgeCSSOptions: {
+          // https://purgecss.com/configuration.html#options
+          // safelist: [
+          //   'container-lg',       
+          //   'container-sm',
+          //   'container-xl',
+          //   'container-xxl',
+          //   'container-fluid',
+          //   'col',
+          //   'row',
+          //   'col-xl-6',
+          //   'col-lg-6',
+          //   'col-xl-8', 
+          //   'col-lg-10', 
+          //   'col-sm-12', 
+          //   'mx-auto', 
+          //   'mt-5',
+          //   'carousel-content'
+          //     ] 
+        },
+        // More options defined here https://purgecss.com/configuration.html#options
+      },
+    },
     // {
     //   resolve: "gatsby-plugin-sitemap",
     //   options: {
@@ -122,6 +153,14 @@ module.exports = {
     },
     `gatsby-plugin-smoothscroll`,
     {
+      resolve: `gatsby-plugin-minify`,
+      options: {
+        removeAttributeQuotes: true,
+        minifyCSS: true,
+        minifyJS: true,
+      }
+    },
+    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         sitemap: 'https://www.rosah-jeunesse.re/sitemap/sitemap-0.xml',
@@ -138,5 +177,6 @@ module.exports = {
         
       }
     },
+
   ],
 }
