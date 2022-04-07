@@ -26,7 +26,7 @@
         }
 
         @media #{$lg} {
-            left: 50%;
+            left: 10%;
         }
 
         @media #{$md} {
@@ -50,9 +50,14 @@
             border-radius: 50px;
             transform: matrix(0.99, 0.03, 0.12, 1, 0, 0);
 
+
+
+            @media #{$lg} {
+                margin-left: 2em;
+            }
+
             @media #{$md} {
                 transform: unset;
-
             }
             
             @media #{$xs} {
